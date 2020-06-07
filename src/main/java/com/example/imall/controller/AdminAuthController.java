@@ -1,5 +1,6 @@
 package com.example.imall.controller;
 
+import com.example.imall.util.ResponseUtil;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -9,6 +10,8 @@ public class AdminAuthController {
 
     @RequestMapping("/login")
     public Object login(){
+        String s = "6e75cad9-5fb6-44ea-84a5-e5508d6bbe86";
+        return ResponseUtil.ok(s);
     }
 
 //    TODO ？ 这个接口的意义
