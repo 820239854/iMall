@@ -1,6 +1,5 @@
 package com.example.imall.controller;
 
-import com.example.imall.bean.ResponseData;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -9,13 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class AdminAuthController {
 
     @RequestMapping("/login")
-    public ResponseData login(){
-        // TODO ? 泛型的省略
-        ResponseData responseData = new ResponseData();
-        responseData.setErrno(0);
-        responseData.setErrmsg("成功");
-        responseData.setData("96e50b56-108a-4335-b110-7c194dca3f9c");
-        return responseData;
+    public Object login(){
     }
 
 //    TODO ？ 这个接口的意义
